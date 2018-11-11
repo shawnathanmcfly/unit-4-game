@@ -19,7 +19,7 @@ var loss = 0, win = 0;
 // returns -1 if smallest is bigger that bigger arg
 function randomValue( smallest, biggest ){
 
-    let i = Math.floor((Math.random() * biggest) + smallest);
+    let i = Math.floor((Math.random() * biggest))  + smallest;
 
     if( smallest > biggest ){
         i = -1;
