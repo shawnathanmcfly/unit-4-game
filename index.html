@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen" />
+    <title>Crystal Collector</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 bg-dark text-center">
+                <h1 class="mx-auto display-5 text-primary">CRYSTAL COLLECTOR</h1>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 bg-success text-center pt-md-4 pb-md-4 text">
+                <h2 id="wins"></h2>
+            </div>
+            <div class="col-6 col-md-4 bg-danger text-center pt-md-4 pb-md-4">
+                <h2 id="losses"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 bg-light text-center">
+                <img id="b_gem" class="mx-auto" src="./assets/images/b.gif" />
+                <img id="p_gem" class="mx-auto" src="./assets/images/p.gif" />
+                <img id="r_gem" class="mx-auto" src="./assets/images/r.gif" />
+                <img id="y_gem" class="mx-auto" src="./assets/images/y.gif" />
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 bg-secondary text-center pt-md-4 pb-md-4">
+                <h1 id="oWin"></h1>
+            </div>
+            <div class="col-12 col-md-8 bg-secondary text-center pt-md-4 pb-md-4" >
+                <h1 id="pWin"></h1>
+                <button type="button" class="btn btn-outline-dark float-right" data-toggle="modal" data-target="#help">
+                    HELP ?
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="help" tabindex="-1" role="dialog" aria-labelledby="help" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="help">GOAL OF THE GAME</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Get the lower number to match the number above by clicking on the displayed crystals.
+                    Each crystal is worth an unknown amount; don't get too cocky though, the crystals worth
+                    will change each round. Good luck!
+                </div>
+                
+              </div>
+            </div>
+          </div>
+       
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./assets/javascript/source.js"></script>
+    
+</body>
+
+</html>
