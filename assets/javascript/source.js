@@ -75,9 +75,7 @@ $("#r_gem, #y_gem, #b_gem, #p_gem").on( "click", function(){
         loss++;
         $("#losses").html("LOSSES <br>"+ loss);
         nextGame();
-    }
-    
-    if( pV === oppV){
+    }else if( pV === oppV){
         win++;
         $("#wins").html("WINS <br>"+ win);
         nextGame();
